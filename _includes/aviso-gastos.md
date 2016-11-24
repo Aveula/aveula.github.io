@@ -1,0 +1,1 @@
+Dichas tarifas no llevan implícitas los gastos de kilometraje y otros gastos inherentes al estudio (parking, peajes, certificados bancarios, etc.) de los cuales siempre se presentarán justificantes a la empresa y serán tarifados aparte del precio del paquete.
