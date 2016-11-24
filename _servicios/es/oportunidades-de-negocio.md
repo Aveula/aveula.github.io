@@ -10,3 +10,10 @@ Dentro de este epígrafe seleccionamos y actualizamos mensualmente aquellas opor
 Cada una de ellas ofrece alternativas al socio-inversor de facilitar una prefesión así como una rentabilidad añadida que le garanticen un futuro estable.
 
 **AVEULA REDES** efectúa la criba, analiza, supervisa y garantiza que todas nuestras ofertas están en perfecto funcionamiento de actividad sin riesgos ni vicios ocultos.
+
+## oportunidades
+
+{% assign oportunidades = site.oportunidades | where: 'estado', 'abierto' %}
+{% for oportunidad in oportunidades %}
+  - {{ oportunidad.tipo}} - {{ oportunidad.sector }}
+{% endfor %}

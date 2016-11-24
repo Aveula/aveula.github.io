@@ -1,0 +1,11 @@
+---
+tipo: franquicia
+sector: Inmobiliario
+inicio actividad: más de 30 años en el mercado
+puntos fuertes:
+ - Bajo coste de entrada que garantiza conocimientos, proceso de formación y base de propiedades amplias para poder tener una tasa de éxito superior a cualquier otra agencia que se decida abrir en el mercado.
+observaciones:
+ - Experiencia positiva y ya desarrollada.
+ - Aperturas próximas para la ciudad de San Sebastián.
+estado: abierto
+---

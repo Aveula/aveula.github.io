@@ -1,0 +1,8 @@
+---
+tipo: Oferta de trabajo
+sector: Inmobiliario
+empresa: En continuo crecimiento con desarrollo actual en San Sebastián
+ofrece: Proceso de formación y de prueba, se valorará experiencia en el sector pero no será imprescindible.
+condiciones: Retribución consistente en nómina + alta Seguridad Social + retribución variable en base a ventas.
+estado: abierto
+---

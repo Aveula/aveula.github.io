@@ -45,6 +45,7 @@ collections:
     output: true
   paquetes-rrcc:
   paquetes-outsourcing:
+  oportunidades:
 defaults:
   - scope:
       path: ""
