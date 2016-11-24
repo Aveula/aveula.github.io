@@ -1,5 +1,5 @@
 ---
-title: Aviso legal y política de cokkies
+title: Aviso legal y política de cookies
 lang: es
 layout: page
 ---
