@@ -4,7 +4,7 @@
       {% assign slides = site.slides | where: 'language', page.language %}
       {% for slide in slides %}
       <li data-link="{{ slide.enlace }}" data-transition="fade" data-masterspeed="800">
-        <img data-bgposition="center top" src="/assets/images/slides/{{ slide.image}}" title="{{ slide.title }}" alt="{{ slide.texto}}"/>
+        <img data-bgposition="center top" src="/assets/images/slides/{{ slide.image }}" title="{{ slide.title }}" alt="{{ slide.texto}}"/>
         <div class="tp-caption title-teaser-text sft fadeout"
                data-x="left"
                data-y="bottom"
