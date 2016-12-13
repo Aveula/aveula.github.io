@@ -5,3 +5,35 @@
 layout: home
 language: es
 ---
+
+<div class="container-full">
+  <div class="row">
+    {% include slider.html %}
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <h2 class="text-center">Servicios</h2>
+    {% assign servicios = site.servicios | where: 'language', page.language %}
+    {% for servicio in servicios %}
+      <div class="col-md-3">
+        <a href="{{ servicio.url | absolute_url }}" style="overflow: hidden;">
+          <img src="{{ servicio.image | prepend: '/assets/images/servicios/' | absolute_url }}"
+               class="img-responsive">
+          <h3>{{ servicio.title }}</h3>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="container">
+  <h2>{{ site.data.traducciones['principios aveula'][page.language] }}</h2>
+  {% for principio in site.data.principios %}
+    <h3>{{ principio[page.language]['nombre'] }}</h3>
+    <p>{{ principio[page.language]['texto'] }}</p>
+  {% endfor %}
+</div>
+
+{% include footer.html %}

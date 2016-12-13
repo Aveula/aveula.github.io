@@ -1,8 +1,10 @@
 ---
 title: Outsourcing
 layout: page
-image: distrito-financiero.png
+image: distrito-financiero.jpg
 language: es
+permalink: /es/servicios/:title
+navegacion: servicios
 ---
 
 Externalización de aquellas tareas de su empresa que usted quiera mantener fuera de sus estructuras. Es usted quien nos propone aquellas tareas que quiera externalizar en su empresa, bien porque no puede dedicarle el tiempo que es debido, bien porque quiere mantener con discreción, fuera de su ámbito profesional, nuevas tareas o investigaciones de mercado de cierta relevancia. Alguna de las tareas que hemos atendido de nuestros clientes son los siguientes:
@@ -14,7 +16,7 @@ Externalización de aquellas tareas de su empresa que usted quiera mantener fuer
 - Formación específica a redes de ventas, trabajo en equipo y motivación, conforme a los parámetros desarrollados por el cliente.
 
 #### Paquetes
-{% assign paquetes = site.paquetes-outsourcing | sort: 'order' %}
+{% assign paquetes = site.data.paquetes | where: 'language', page.language | where: 'servicio', page.slug | sort: 'order' %}
 {% for paquete in paquetes %}
   {% if paquete.language == page.language %}
   - {{ paquete.title }}

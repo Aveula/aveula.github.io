@@ -1,0 +1,55 @@
+/*Buttons*/
+ul.links li a, a.more, input[type="submit"], input[type="reset"], input[type="button"], .checkout-buttons .checkout-cancel,
+.checkout-buttons .checkout-back, .view-showcases .more-link a  { font-size: 14px; text-transform: uppercase; padding: 15px 23px; background-color: #2a68af;
+color: #ffffff; display: inline-block; line-height: 1; -webkit-border-radius: 24px; -moz-border-radius: 24px; border-radius: 24px; min-width: 160px; border: none;
+-webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; margin:10px 0;text-align: center; }
+
+input[type="submit"], input[type="reset"], input[type="button"] { margin-right: 5px; }
+
+ul.links li a:hover, a.more:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .view-showcases .more-link a:hover,
+.checkout-buttons .checkout-cancel:hover, .checkout-buttons .checkout-back:hover { text-decoration: none; background-color: #4187d1; color: #ffffff; }
+
+span.button-operator { margin:0 10px 0 5px; }
+
+.comment_forbidden a:last-child { margin: 0 10px 10px 0; }
+
+footer .comment_forbidden a:last-child { margin: 0 10px 10px 10px; }
+
+/*More links*/
+.view-showcases .more-link { text-align: center; }
+
+.more-link a, .view-showcases .view-content .more-link a { margin: 0 0 10px 0px; display: block; background: transparent; padding:0; font-size: 15px;
+text-align: left; text-transform: uppercase; }
+
+.view-showcases .view-content .more-link a { color: #2a68af; font-size: 13px; }
+
+.more-link a:after, .view-showcases .view-content .more-link a:after { content: "\f101"; font-family: 'FontAwesome'; font-style: normal; font-size: 12px; }
+
+.view-showcases .more-link a:after { content: ""; }
+
+.view-showcases .view-content .more-link a:hover { color: #4187d1; text-decoration: underline; }
+
+.footer-area .more-link a { font-size: 14px; text-transform: none; }
+
+.footer-area .more-link a:after { font-size: 11px; }
+
+.block-quicktabs .more-link a { margin:10px 0 5px 0; margin-left: 137px; }
+
+.two-sidebars .block-quicktabs .more-link a { margin-left: 0; }
+
+@media (min-width: 1200px) {
+	.block-quicktabs .more-link a  { margin-left: 144px; }
+}
+
+@media (max-width: 991px) {
+	.block-quicktabs .more-link a  { margin-left: 0; }
+}
+
+@media (max-width: 767px) {
+	.footer-area .more-link a { text-align: center; }
+}
+
+.tp-caption a {
+  color: #fff;
+}

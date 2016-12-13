@@ -3,6 +3,8 @@ title: Oportunidades de negocio
 layout: page
 language: es
 image: oportunidades-de-negocio.jpg
+permalink: /es/servicios/:title
+navegacion: servicios
 ---
 
 Dentro de este epígrafe seleccionamos y actualizamos mensualmente aquellas oportunidades de negocio que según nuestros criterios se ajustan al perfil de seriedad y rentabilidad pra el inversor.

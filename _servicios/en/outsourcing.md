@@ -3,6 +3,7 @@ title: Outsourcing
 layout: page
 image: distrito-financiero.png
 language: en
+permalink: /en/services/:title
 ---
 
 Outsourcing of those tasks performed by your company which you wish to keep outside your structure. Should you not be able to devote to a task as much time as it demands, or should you like to discreetly keep new market related researches or jobs of a certain importance outside of your professional area, you decide which tasks you would like to outsource. Some of the tasks we have handled for our clients include:
@@ -14,12 +15,13 @@ Outsourcing of those tasks performed by your company which you wish to keep outs
 - Specific training regarding sales networks, teamwork and motivation, according to the parameters developed by you.
 
 #### Packs
-{% assign paquetes = site.paquetes-outsourcing | sort: 'order' %}
+{% assign paquetes = site.data.paquetes | where: 'language', page.language | where: 'servicio', page.slug | sort: 'order' %}
 {% for paquete in paquetes %}
   {% if paquete.language == page.language %}
   - {{ paquete.title }}
   {% endif %}
 {% endfor %}
+
 
 {% include tarifa-orientativa.md %}
 

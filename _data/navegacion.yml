@@ -1,0 +1,41 @@
+es:
+  inicio:
+    name: "Inicio"
+    url: "es"
+  servicios:
+    name: "Servicios"
+    url: "servicios"
+  articulos:
+    name: "Artículos"
+    url: "articulos"
+  contacto:
+    name: "Contacto"
+    url: "contacto"
+
+en:
+  inicio:
+    name: "Home"
+    url: "en"
+  servicios:
+    name: "Services"
+    url: "services"
+  articulos:
+    name: "Articles"
+    url: "articles"
+  contacto:
+    name: "Contact"
+    url: "contact"
+
+de:
+  inicio:
+    name: "Inicio"
+    url: "de"
+  servicios:
+    name: "Servicios"
+    url: "servicios"
+  articulos:
+    name: "Artículos"
+    url: "articulos"
+  contacto:
+    name: "Contacto"
+    url: "contacto"

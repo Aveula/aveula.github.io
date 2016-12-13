@@ -1,0 +1,37 @@
+<div id="slideshow" class="fullwidthbanner-container main-slider">
+  <div class="fullwidthbanner">
+    <ul>
+      {% assign slides = site.slides | where: 'language', page.language %}
+      {% for slide in slides %}
+      <li data-link="{{ slide.enlace }}" data-transition="fade" data-masterspeed="800">
+        <img data-bgposition="center top" src="/assets/images/slides/{{ slide.image}}" title="{{ slide.title }}" alt="{{ slide.texto}}"/>
+        <div class="tp-caption title-teaser-text sft fadeout"
+               data-x="left"
+               data-y="bottom"
+               data-speed="500"
+               data-start="1200"
+               data-voffset="-30"
+               data-easing="Power0.easeIn">
+          <div class="title">
+            <a href="{{ slide.enlace }}">{{ slide.title }}</a>
+          </div>
+          <p>{{ slide.texto }}</p>
+        </div>
+
+        <div class="tp-caption caption-link sft fadeout"
+             data-x="right"
+             data-y="bottom"
+             data-speed="500"
+             data-start="1200"
+             data-voffset = "-30"
+             data-easing="Power0.easeIn">
+          <a href="{{ slide.enlace }}" class="more"><i class="fa fa-info-circle"></i>Ver detalles</a>
+      </div>
+  </li>
+  {% endfor %}
+
+</ul>
+
+<div class="tp-bannertimer tp-bottom"></div>
+</div>
+</div>

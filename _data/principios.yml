@@ -1,0 +1,43 @@
+- icon: "thumbs-up"
+  es:
+    nombre: "Oportunidad"
+    texto: "Existen oportunidades de negocio en España y están ahí, sólo falta poner los medios adecuados para explotarlos."
+  en:
+    nombre: "Opportunity"
+    texto: "There are existing business opportunities waiting in Spain. All that remains is providing the proper means of exploiting them."
+  de:
+    nombre: "Geschäftsmöglichkeiten"
+    texto: "Es gibt Geschäftsmöglichkeiten in Spanien. Sie sind da, es fehlen nur die geeigneten Mittel, um sie zu nutzen."
+
+- icon: "flag"
+  es:
+    nombre: "Independencia"
+    texto: "No dependemos de ningún grupo ni entidad financiera, eso supone que damos una orientación independiente aportando el valor añadido que el cliente necesita."
+  en:
+    nombre: "Independence"
+    texto: "We do not depend on any group pr financial entity, which means that we provide independent consulting with the added value the client needs."
+  de:
+    nombre: "Unabhängigkeit"
+    texto: "Wir hängen von keinem Konzern oder Finanzinstitut ab, deshalb können wir unsere Kunden unabhängig beraten und denjenigen Mehrwert liefern, den sie brauchen."
+
+- icon: "gavel"
+  es:
+    nombre: "Garantía"
+    texto: "Garantizamos el poder protocolizar cualquier actuación ante fedarario público (Notario) para asegurar su tranquilidad en cada paso que da."
+  en:
+    nombre: "Guarantee"
+    texto: "We guarantee our ability to notarize any action before Notary Public to give you confidence in every step you take."
+  de:
+    nombre: "Garantie"
+    texto: "Wir garantieren, dass wir jede Handlung vor dem Urkundsbeamten (Notar) beurkunden können, um sicherzustellen, dass der Kunde bei jedem Schritt, den er tut, ruhig und gelassen ist."
+
+- icon: "chain"
+  es:
+    nombre: "Compromiso"
+    texto: "Con los intereses del cliente para que nuestra relación sea estable y duradera."
+  en:
+    nombre: "Compromise"
+    texto: "With the client's interest to make our relationship stable and long-lasting."
+  de:
+    nombre: "Engagement"
+    texto: "Wir setzen uns für die Interessen des Kunden ein, damit unser Verhältnis beständig und dauerhaft ist."

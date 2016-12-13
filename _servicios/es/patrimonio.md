@@ -3,6 +3,8 @@ title: Patrimonio
 layout: page
 image: reloj.png
 language: es
+permalink: /es/servicios/:title
+navegacion: servicios
 ---
 
 Asesoramos y gestionamos sus recursos de capital para que las rentabilidades del mismo sean óptimas. Actuamos de forma independiente y siempre con la mayor transparencia para que usted se sienta seguro de todas y cada una de la decisiones que tome.

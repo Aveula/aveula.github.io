@@ -1,0 +1,117 @@
+/*Revolution Slider Styles*/
+.fullwidthbanner>ul, .bannercontainer .banner>ul { display: none; }
+
+.bannercontainer .banner>ul >li .tp-bgimg { border: 1px solid #e5e5e5; }
+
+.tp-loader 	{ background:url('/assets/js/rs-plugin/assets/loader.gif') no-repeat center center; margin:-10px 0 0 -110px; top:50%; left:50%; z-index:498; width:220px;height:20px;
+border-radius: 0; background-color: transparent; }
+
+/*Revolution Caption*/
+.title-teaser-text { width: 430px; white-space: normal!important; margin-left: 30px!important;}
+
+.title-teaser-text .title, .title-teaser-text p { background: rgba(0,0,0,0.77); color: #fff; padding: 20px; margin: 0 0 1px 0; width: 100%;
+display: block; }
+
+.title-teaser-text .title { font-size: 37px; text-transform: none; line-height: 1.15; }
+
+.title-teaser-text .title a { color: #fff; }
+
+.title-teaser-text .title a:hover { color: #fff; text-decoration: underline; }
+
+.title-teaser-text p { font-size: 21px; line-height: 1.52; }
+
+.title-teaser-text p a { color: #fff; text-decoration: underline; }
+
+.title-teaser-text p a:hover { text-decoration: none; color: #fff; }
+
+.caption-link a {
+margin-right: 30px!important;
+background: #4187d1; /* Old browsers */
+background: -moz-linear-gradient(top, #4187d1 0%, #2a68af 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4187d1), color-stop(100%,#2a68af)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #4187d1 0%,#2a68af 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #4187d1 0%,#2a68af 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #4187d1 0%,#2a68af 100%); /* IE10+ */
+background: linear-gradient(to bottom, #4187d1 0%,#2a68af 100%); /* W3C */
+-webkit-box-shadow: 0 1px 2px #221f1f; -moz-box-shadow: 0 1px 2px #221f1f; box-shadow: 0 1px 2px #221f1f; position: relative; padding-left: 60px; }
+
+.caption-link a i { font-size: 22px; position: absolute; left: 23px; top: 12px; }
+
+.caption-link a:hover { opacity: 0.9; filter: alpha(opacity=90); }
+
+@media (min-width: 1200px) {
+	.title-teaser-text, .caption-link a { margin-left: 0!important; }
+}
+
+@media (max-width: 1199px) {
+	.title-teaser-text .title { font-size: 30px; }
+	.title-teaser-text p { font-size: 18px; line-height: 1.52; }
+}
+
+@media (max-width: 991px) {
+	.title-teaser-text .title { font-size: 24px; }
+}
+
+@media (max-width: 767px) {
+	.title-teaser-text { display: none; }
+	.caption-link a { padding: 10px 10px 10px 30px; }
+	.caption-link a i { font-size: 16px; top:10px; }
+}
+
+@media (max-width: 480px) {
+	.caption-link { display: none; }
+}
+
+.tp-caption.slidelink { z-index: 0!important; left: 0!important; top: 0!important; }
+
+/*Revolution Nav Controls*/
+.tparrows.default { background-image: none; width: 45px; height: 45px; color:#fff; background-color: rgba(0,0,0,0.35);
+-webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; text-align: center; -webkit-transition: all linear 0.2s;
+-moz-transition: all linear 0.2s; -o-transition: all linear 0.2s; -ms-transition: all linear 0.2s; transition: all linear 0.2s; display: none; }
+
+.tparrows.default:before  { font-family: 'FontAwesome'; font-size: 32px; display: inline-block; content: '\f104'; line-height: 44px; padding-right: 2px; }
+
+.tparrows.tp-rightarrow:before  { content: '\f105'; padding-right: 0px; }
+
+.tparrows.default:hover { background-color: rgba(0,0,0,0.55); text-decoration: none; color: #fff; }
+
+.tp-bullets { z-index: 20; display: none; }
+
+.tp-bullets.simplebullets.round .bullet { background-image: none; background-color: rgba(0,0,0,0.35);
+-webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%; width: 15px; height: 15px; -webkit-transition: all linear 0.2s;
+-moz-transition: all linear 0.2s; -o-transition: all linear 0.2s; -ms-transition: all linear 0.2s; transition: all linear 0.2s; }
+
+.tp-bullets.simplebullets.round .bullet:hover, .tp-bullets.simplebullets.round .bullet.selected  { background-color: rgba(0,0,0,0.55); }
+
+.tp-bannertimer { background-image: none; background-color: #1d1d1d; display: none; }
+
+@media (min-width: 1200px) {
+	.tparrows.default {  width: 65px; height: 65px; top:50%!important; margin-top: -32px; }
+	.tparrows.default:before  { font-size: 44px; line-height: 63px; }
+}
+
+@media (max-width: 1199px) {
+	.tp-bullets { bottom:-40px!important; }
+	.tp-bullets.simplebullets.round .bullet { background-color: rgba(0,0,0,0.65); }
+	.tp-bullets.simplebullets.round .bullet:hover, .tp-bullets.simplebullets.round .bullet.selected  { background-color: #1e1e1e; }
+	.tparrows.default { top:auto!important; bottom:-55px; }
+	.tparrows.default, .tparrows.default:hover {  background: transparent; width: auto;}
+	.tparrows.default:before  { font-size: 48px; color: rgba(0,0,0,0.65); }
+	.tparrows.default:hover:before { color: #1e1e1e;  }
+}
+
+/*Revolution Slider Boxed*/
+.bannercontainer { width:100%; position:relative; padding:0; }
+
+.bannercontainer .title-teaser-text { margin-left: 30px!important; }
+
+.bannercontainer .caption-link a { margin-right: 30px!important; }
+
+.bannercontainer .tparrows.default { width: 45px; height: 45px; }
+
+.bannercontainer .tparrows.default:before  { font-size: 32px; line-height: 44px; padding-right: 1px; }
+
+@media (min-width: 1200px) {
+.bannercontainer .title-teaser-text { margin-left: 100px!important; }
+.bannercontainer .caption-link a { margin-right: 100px!important; }
+}
