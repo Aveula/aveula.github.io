@@ -73,6 +73,9 @@ text-align: left; text-transform: uppercase; }
 #main-navigation .sf-arrows .sf-with-ul::after {
 	border-top-color: black;
 }
+.mean-nav img {
+	padding-top: 6px;
+}
 .onscroll #logo {
 	display: block;
 	visibility: visible;
