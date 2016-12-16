@@ -83,6 +83,10 @@ text-align: left; text-transform: uppercase; }
 .onscroll #header {
 	background-color: white;
 }
+.onscroll #main-navigation .sf-menu ul {
+	padding: 0;
+}
+
 .footer-area a:hover, .subfooter-area a:hover {
 	color: #215999;
 	text-decoration: none;
@@ -93,4 +97,38 @@ text-align: left; text-transform: uppercase; }
 }
 .caption-link a {
 	padding-left: 60px;
+}
+
+#top-content,
+#highlighted {
+	padding-bottom: 25px;
+}
+#top-content .item,
+#highlighted .item {
+	margin-top: 30px !important;
+}
+#top-content .item {
+	text-align: justify;
+}
+#highlighted .icon {
+	width: 80px;
+	height: 80px;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	margin: 0 auto 35px;
+	text-align: center;
+	display: block;
+	color: #a3a3a3;
+	background: #252525;
+}
+#highlighted .icon {
+	color: white;
+	background-color: #2a68af;
+}
+#highlighted .icon i {
+	font-size: 36px;
+	width: 100%;
+	height: 100%;
+	line-height: 80px;
 }

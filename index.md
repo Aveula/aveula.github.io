@@ -12,28 +12,36 @@ language: es
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <h2 class="text-center">Servicios</h2>
-    {% assign servicios = site.servicios | where: 'language', page.language %}
-    {% for servicio in servicios %}
-      <div class="col-md-3">
-        <a href="{{ servicio.url | absolute_url }}" style="overflow: hidden;">
-          <img src="{{ servicio.image | prepend: '/assets/images/servicios/medium/' | absolute_url }}"
-               class="img-responsive">
-          <h3 class="h4">{{ servicio.title }}</h3>
-        </a>
-        {{ servicio.excerpt | strip_html | truncate: 100 | markdownify }}
-        <a href="{{ servicio.url }}"><small>{{ site.data.traducciones['leer más'][page.language] }}</small></a>
-      </div>
-    {% endfor %}
+<div id="top-content">
+  <div class="container">
+    <div class="row">
+      <h2 class="text-center">Servicios</h2>
+      {% assign servicios = site.servicios | where: 'language', page.language | sort: 'orden' %}
+      {% for servicio in servicios %}
+        <div class="col-sm-3 col-md-3 item">
+          <a href="{{ servicio.url | absolute_url }}" class="overlayed">
+            <span class="overlay"><i class="fa fa-link"></i></span>
+            <img src="{{ servicio.image | prepend: '/assets/images/servicios/medium/' | absolute_url }}"
+                 class="img-responsive">
+            <h3><a href="{{ servicio.url | absolute_url }}">{{ servicio.title }}</a></h3>
+          </a>
+          {{ servicio.excerpt | strip_html | truncate: 85 | markdownify }}
+          <span class="more-link"><a href="{{ servicio.url | absolute_url}}">{{ site.data.traducciones['leer más'][page.language] }}</a></span>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
-<div class="container">
-  <h2>{{ site.data.traducciones['principios aveula'][page.language] }}</h2>
-  {% for principio in site.data.principios %}
-    <h3>{{ principio[page.language]['nombre'] }}</h3>
-    <p>{{ principio[page.language]['texto'] }}</p>
-  {% endfor %}
+<div id="highlighted">
+  <div class="container">
+    <h2 class="title">{{ site.data.traducciones['principios aveula'][page.language] }}</h2>
+    {% for principio in site.data.principios %}
+      <div class="col-sm-6 col-md-6 item">
+        <div><span class="icon"><i class="fa fa-{{ principio['icon'] }}"></i></span></div>
+        <h3>{{ principio[page.language]['nombre'] }}</h3>
+        <p>{{ principio[page.language]['texto'] }}</p>
+      </div>
+    {% endfor %}
+  </div>
 </div>

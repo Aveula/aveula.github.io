@@ -5,6 +5,7 @@ language: es
 image: oportunidades-de-negocio.jpg
 permalink: /es/servicios/:title
 navegacion: servicios
+orden: 3
 ---
 
 Dentro de este epígrafe seleccionamos y actualizamos mensualmente aquellas oportunidades de negocio que según nuestros criterios se ajustan al perfil de seriedad y rentabilidad pra el inversor.
