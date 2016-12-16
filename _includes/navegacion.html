@@ -18,6 +18,21 @@
           {% endif %}
         </li>
       {% endfor %}
+      <li><a href="#">{{ site.data.traducciones['idiomas'][page.language] }}</a>
+        <ul>
+          {% for lang in site.languages %}
+          <li>
+            <a href="{{ "/" | append: lang['code'] | absolute_url }}">
+              <img class="language-icon"
+                   typeof="foaf:Image"
+                   src="{{ "/assets/images/flags/" | append: lang['code']  | append: ".png" | absolute_url }}"
+                   alt="{{ site.data.traducciones[lang][page.language] }}"
+                   title="{{ site.data.traducciones[lang][page.language] }}"> {{ site.data.traducciones[lang['lang']][page.language] }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
     </ul>
 
   </nav>
