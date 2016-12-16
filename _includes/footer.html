@@ -1,13 +1,84 @@
-<footer class="container">
-  <div>
-    <h2>{{ site.data.traducciones['acerca de'][page.language] }}</h2>
-    {{ site.data.acerca[page.language] }}
-  </div>
-  <div>
-    <h2>{{ site.data.traducciones['articulos'][page.language] }}</h2>
-    {% for post in site.posts %}
-      <h3>{{ post.title }}</h3>
-      {{ post.excerpt }}
-    {% endfor %}
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-4">
+        <h2>{{ site.data.traducciones['acerca de'][page.language] }}</h2>
+        {{ site.data.acerca[page.language] | markdownify }}
+      </div>
+
+      <div class="col-sm-4">
+        <h2>{{ site.data.traducciones['articulos'][page.language] }}</h2>
+        {% assign posts = site.posts %}
+        {% for post in posts limit: 4 %}
+          <img src="{{ "/assets/images/posts/medium/" | append: post.image | absolute_url }}"
+               class="img-responsive"
+               width="300" height="200">
+          <small>{{ post.date | date: "%a, %d %b %Y" }}</small>
+          <h3>{{ post.title }}</h3>
+        {% endfor %}
+      </div>
+
+      <div class="col-sm-4">
+        <h2>{{ site.data.traducciones['informacion de contacto'][page.language] }}</h2>
+        <span class="icon" href="#"><i class="fa fa-globe"></i></span>
+        <ul>
+          {% assign dir = site.data.informacion-contacto[0] %}
+          <li><i class="fa fa-map-marker"></i> {{ dir.direccion }} <br> {{ dir.cp }} {{ dir.localidad }}</li>
+          <li><i class="fa fa-phone"></i> {{ dir.telefono }}</li>
+          <li><i class="fa fa-print"></i> {{ dir.fax }} </li>
+          <li><i class="fa fa-envelope-o"></i> {{ site.data.traducciones['para consultas generales'][page.language] }}: <br><a href="mailto:aveula@aveula.com">{{ dir.email }}</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>
+
+<div id="subfooter" class="clearfix">
+	<div class="container">
+
+		<!-- #subfooter-inside -->
+		<div id="subfooter-inside" class="clearfix">
+      <div class="row">
+
+    		<div class="col-md-4">
+          <!-- #subfooter-left -->
+          <div class="subfooter-area left">
+            <div class="region region-sub-footer-left">
+              <div id="block-locale-language" class="block block-locale contextual-links-region clearfix">
+
+                <ul class="nav nav-pills" id="lang-switcher">
+                  {% for lang in site.languages %}
+                  <li>
+                    <a href="{{ "/" | append: lang['code'] | absolute_url }}">
+                      <img class="language-icon"
+                           typeof="foaf:Image"
+                           src="{{ "/assets/images/flags/" | append: lang['code']  | append: ".png" | absolute_url }}"
+                           alt="{{ site.data.traducciones[lang][page.language] }}"
+                           title="{{ site.data.traducciones[lang][page.language] }}"> {{ site.data.traducciones[lang['lang']][page.language] }}
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+
+              </div>
+            </div>
+            <p class="small">Copyright © 2014-{{ site.time | date: "%Y" }} Aveula Redes S.L.. All rights reserved.</p>
+          </div>
+        </div>
+
+    		<div class="col-md-8">
+          <!-- #subfooter-right -->
+          <div class="subfooter-area right text-right">
+            <ul class="menu list-inline">
+              <li class="first leaf"><a href="/es/aviso-legal-y-pol%C3%ADtica-de-cookies" title="">Aviso legal y política de cookies</a></li>
+              <li class="last leaf"><a href="/es/contacto" title="">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+
+    	</div>
+    </div>
+
+  </div>
+</div>

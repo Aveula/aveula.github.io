@@ -1,30 +1,16 @@
-<nav class="navbar navbar-default" role="navigation">
-  <div class="navbar-header">
-    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
+<div id="main-navigation" class="clearfix">
+  <nav role="navigation">
 
-    <a class="name navbar-brand" href="{{ "/" | append: page.language | prepend: site.baseurl | prepend: url }}" title="Home">
-      <span class="visible-xs">{{ site.title }}</span>
-      <img src="{{ "/assets/images/" | append: site.logo | prepend: site.baseurl | prepend: site.url }}" alt="{{ site.title }}" class="img-responsive img-circle hidden-xs">
-    </a>
-  </div>
-
-  <div class="collapse navbar-collapse">
-    <ul class="nav navbar-nav navbar-right h3" role="menu">
+    <ul class="sf-menu pull-right" role="menu">
       {% assign items = site.data.navegacion[include.language] %}
       {% for item in items %}
         {% assign servicios = site.servicios | where: 'language', page.language | where: 'navegacion', item[0] | sort: 'orden' %}
-        <li class="{% if item[1].url == 'servicios' %}dropdown{% endif %}{%if page.url == item[1].url %} active{% endif %}">
-          <a href="{{ item[1].url | absolute_url }}" {% if item[1].url == 'servicios' %}class="dropdown-toggle" data-toggle="dropdown"{% endif %}>{{ item[1].name }}
-            {% if item[1].url == 'servicios' %}<span class="caret"></span>{% endif %}
+        <li>
+          <a href="{{ item[1].url | absolute_url }}">
+            {{ item[1].name }}
           </a>
           {% if item[1].url == 'servicios' %}
-            <ul class="dropdown-menu list-unstyled" role="menu">
+            <ul>
             {% for servicio in servicios %}
               <li><a href="{{ servicio.url | absolute_url }}">{{ servicio.title }}</a></li>
             {% endfor %}
@@ -34,5 +20,5 @@
       {% endfor %}
     </ul>
 
-  </div>
-</nav>
+  </nav>
+</div>

@@ -1,0 +1,25 @@
+<div id="toTop"><i class="fa fa-angle-up"></i></div>
+<header id="header" class="clearfix">
+  <div class="container">
+    <div id="header-inside">
+      <div class="row">
+
+        <div class="col-md-4">
+          <div id="header-inside-left" class="clearfix">
+            <div id="logo" class="col-sm-12">
+              <a href="{{ "/" | append: page.language | absolute_url }}" title="Inicio" rel="home">
+                <img src="{{ "/assets/images/logo.jpg" | absolute_url }}" alt="Inicio">
+              </a>
+            </div>
+            <div id="site-slogan" class="col-sm-12">{{ site.slogan[page.language] }}</div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div id="header-inside-right" class="clearfix">
+            {% include navegacion.html language=page.language %}
+        </div>
+
+    </div>
+  </div>
+</header>

@@ -1,0 +1,13 @@
+<div class="col-md-3">
+  <div class="pricing-table style-2">
+    <div class="pricing-table-header">
+      <div class="pricing-name">{{ include.titulo }}</div>
+      <div class="pricing-value">{{ include.precio }}</div>
+    </div>
+    <div class="pricing-features">
+      {% for item in include.items %}
+        <p>{{ item | replace: 'Paquete','<span class="fa fa-gift"></span>'}}</p>
+      {% endfor %}
+    </div>
+  </div>
+</div>

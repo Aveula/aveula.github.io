@@ -1,6 +1,5 @@
 ---
 title: Outsourcing
-layout: page
 image: distrito-financiero.png
 language: en
 permalink: /en/services/:title
@@ -21,10 +20,3 @@ Outsourcing of those tasks performed by your company which you wish to keep outs
   - {{ paquete.title }}
   {% endif %}
 {% endfor %}
-
-
-{% include tarifa-orientativa.md %}
-
-{% include aviso-gastos.md %}
-
-{% include instrucciones-contratacion.md %}

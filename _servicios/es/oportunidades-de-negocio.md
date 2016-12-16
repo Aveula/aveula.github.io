@@ -1,6 +1,6 @@
 ---
 title: Oportunidades de negocio
-layout: page
+subtitle: "Traspasos, franquicias y ofertas de trabajo"
 language: es
 image: oportunidades-de-negocio.jpg
 permalink: /es/servicios/:title

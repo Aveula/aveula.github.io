@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="node node-main-content full-width">
+
+  <div class="images-container clearfix">
+    <div class="image-preview">
+      <img src="{{ "/assets/images/servicios/large/" | append: page.image | absolute_url }}"
+           alt="{{ page.subtitle }}"
+           title="{{ page.title }}">
+
+      <div class="image-caption hidden-xs">
+        <h4>{{ page.title }}</h4>
+        <p>{{ page.subtitle }}</p>
+      </div>
+
+    </div>
+  </div>
+
+  {{ content }}
+
+</article>

@@ -1,6 +1,6 @@
 ---
 title: Redes Comerciales
-layout: page
+subtitle: Proyectos llave en mano
 image: ciudad.png
 language: es
 permalink: /es/servicios/:title
@@ -22,12 +22,17 @@ Desarrollo de redes comerciales para aquellas empresas que quieran instalarse en
 
 #### Paquetes
 {% assign paquetes = site.data.paquetes | where: 'language', page.language | where: 'servicio', page.slug | sort: 'order' %}
+<div class="row">
 {% for paquete in paquetes %}
   {% if paquete.language == page.language %}
-  - {{ paquete.title }}
+  {% include paquete.html titulo=paquete.title precio=paquete.prize items=paquete.items %}
   {% endif %}
 {% endfor %}
+</div>
 
-{% include aviso-gastos.md %}
+{% assign aviso = site.data.avisos.aviso-gastos[page.language] %}
+{% include aviso.html texto=aviso %}
 
-{% include instrucciones-contratacion.md %}
+{% assign ti = site.data.instrucciones-contratacion[page.language].title %}
+{% assign te = site.data.instrucciones-contratacion[page.language].descripcion | markdownify %}
+{% include instrucciones-contratacion.html titulo=ti texto=te %}

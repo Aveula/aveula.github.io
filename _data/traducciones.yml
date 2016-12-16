@@ -17,3 +17,28 @@ informacion de contacto:
   es: "Información de contacto"
   en: "Contact info"
   de: "Kontaktinformationen"
+
+para consultas generales:
+  es: "Para consultas generales"
+  en: "For general enquiries"
+  de: "Für allgemeine Anfragen"
+
+español:
+  es: "Español"
+  en: "Spanish"
+  de: "Spanisch"
+
+ingles:
+  es: "Inglés"
+  en: "English"
+  de: "Englisch"
+
+aleman:
+  es: "Alemán"
+  en: "German"
+  de: "Deutsch"
+
+leer más:
+  es: "Leer más"
+  en: "Read more"
+  de: "Lesen sie mehr"

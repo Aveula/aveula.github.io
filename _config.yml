@@ -14,6 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Aveula Redes
+slogan:
+  es: " Desarrollo de Redes Comerciales, Outsourcing y Gestión de Patrimonios"
+  en: "Commercial Networks Development, Outsourcing & Assets Management"
+  de: " Entwicklung von Netzwerk-Lösungen, Outsourcing und Wealth Management"
 email: aveula@aveula.com
 description: "Aveula Redes está diseñada para dar servicio a las empresas, resolviendo sus problemas de focalización, bien en mercados que al no ser conocidos, o bien en temas que por ser muy específicos, no están cualificados para resolver, y necesitan de alguien de confianza que les aporte conocimientos y trabajo donde ellos no llegan.
 <br>
@@ -21,9 +25,12 @@ Contamos con personal de máxima confianza y con contrastada experiencia, que, e
 baseurl: "/website" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 languages:
-  - es
-  - en
-  - de
+  - lang: español
+    code: es
+  - lang: ingles
+    code: en
+  - lang: aleman
+    code: de
 
 # Build settings
 markdown: kramdown
@@ -47,4 +54,4 @@ defaults:
       path: ""
       type: servicios
     values:
-      layout: page
+      layout: servicio

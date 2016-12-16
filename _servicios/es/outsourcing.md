@@ -1,6 +1,6 @@
 ---
 title: Outsourcing
-layout: page
+subtitle: "Libérese de tareas ajenas a su actividad"
 image: distrito-financiero.jpg
 language: es
 permalink: /es/servicios/:title
@@ -22,9 +22,3 @@ Externalización de aquellas tareas de su empresa que usted quiera mantener fuer
   - {{ paquete.title }}
   {% endif %}
 {% endfor %}
-
-{% include tarifa-orientativa.md %}
-
-{% include aviso-gastos.md %}
-
-{% include instrucciones-contratacion.md %}

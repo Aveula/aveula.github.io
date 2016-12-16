@@ -53,3 +53,34 @@ text-align: left; text-transform: uppercase; }
 .tp-caption a {
   color: #fff;
 }
+
+#main-navigation ul.sf-menu ul {
+	padding: 0;
+	background-color: white;
+}
+#main-navigation ul.sf-menu li {
+	background-color: white;
+}
+#main-navigation ul.sf-menu li a {
+	font-size: 14px;
+	font-weight:700;
+	/*padding: 5px 17px 5px;*/
+	text-transform:uppercase;
+	/*margin: 0 5px;*/
+  border-bottom: 2px solid transparent;
+	color: #000;
+}
+#main-navigation .sf-arrows .sf-with-ul::after {
+	border-top-color: black;
+}
+.onscroll #logo {
+	display: block;
+	visibility: visible;
+}
+.onscroll #header {
+	background-color: white;
+}
+.footer-area a:hover, .subfooter-area a:hover {
+	color: #215999;
+	text-decoration: none;
+}
