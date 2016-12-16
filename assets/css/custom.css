@@ -84,3 +84,10 @@ text-align: left; text-transform: uppercase; }
 	color: #215999;
 	text-decoration: none;
 }
+
+.tp-caption a {
+	color: white;
+}
+.caption-link a {
+	padding-left: 60px;
+}
