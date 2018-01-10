@@ -19,10 +19,12 @@ language: de
     {% for servicio in servicios %}
       <div class="col-md-3">
         <a href="{{ servicio.url | absolute_url }}" style="overflow: hidden;">
-          <img src="{{ servicio.image | prepend: '/assets/images/servicios/' | absolute_url }}"
+          <img src="{{ servicio.image | prepend: '/assets/images/servicios/medium/' | absolute_url }}"
                class="img-responsive">
-          <h3>{{ servicio.title }}</h3>
+          <h3 class="h4">{{ servicio.title }}</h3>
         </a>
+        {{ servicio.excerpt | strip_html | truncate: 100 | markdownify }}
+        <a href="{{ servicio.url }}"><small>{{ site.data.traducciones['leer más'][page.language] }}</small></a>
       </div>
     {% endfor %}
   </div>

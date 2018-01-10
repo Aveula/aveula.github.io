@@ -1,8 +1,11 @@
 ---
 title: Outsourcing
-image: distrito-financiero.png
+subtitle: "Libérese de tareas ajenas a su actividad"
+image: distrito-financiero.jpg
 language: en
 permalink: /en/services/:title
+navegacion: services
+orden: 1
 ---
 
 Outsourcing of those tasks performed by your company which you wish to keep outside your structure. Should you not be able to devote to a task as much time as it demands, or should you like to discreetly keep new market related researches or jobs of a certain importance outside of your professional area, you decide which tasks you would like to outsource. Some of the tasks we have handled for our clients include:
